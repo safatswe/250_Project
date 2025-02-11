@@ -7,8 +7,9 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
-    android:layout_margin="20dp"
+    android:layout_margin="10dp"
     android:weightSum="100"
+    android:background="#F7C5CC"
 
     tools:context=".LoginPhoneNumberActivity">
     <LinearLayout
@@ -97,14 +98,11 @@
         android:gravity="center"
         android:orientation="horizontal">
 
-
-<com.hbb20.CountryCodePicker
-    android:id="@+id/ccp"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-
-    app:ccp_defaultNameCode="bd"
-    />
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/login_countrycode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccp_defaultNameCode="bd"/>
         <EditText
 
             android:layout_width="match_parent"
